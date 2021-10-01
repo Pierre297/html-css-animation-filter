@@ -104,17 +104,29 @@
 
 .ex-10-icon {
   animation-name: upload;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes upload {
-  100% {
-    transform: rotate(-360deg);
+  0% {
+    transform: rotate(1turn);
   }
 }
 
 /* esercizio 11 */
+.ex-11-icon:hover {
+  animation-name: upload2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes upload2 {
+  80% {
+    transform: rotate(0.8turn);
+  }
+}
 
 /* esercizio 12 */
 
@@ -167,18 +179,22 @@
 @keyframes test-top2 {
   25% {
     left: 78%;
+    top: -10;
   }
 
   50% {
     top: 48px;
+    left: 78%;
   }
 
   75% {
     left: -4%;
+    top: 48px;
   }
 
   90% {
     top: -10px;
+    left: -4px;
   }
 
   100% {
@@ -189,18 +205,22 @@
 @keyframes test-bottom2 {
   25% {
     right: 78%;
+    bottom: -10;
   }
 
   50% {
     bottom: 48px;
+    right: 78%;
   }
 
   75% {
     right: -4%;
+    bottom: 48px;
   }
 
   90% {
     bottom: -10px;
+    right: -4px;
   }
 
   100% {
