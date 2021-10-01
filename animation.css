@@ -101,3 +101,109 @@
 }
 
 /* esercizio 10 */
+
+.ex-10-icon {
+  animation-name: upload;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes upload {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* esercizio 11 */
+
+/* esercizio 12 */
+
+.ex-12-top-white {
+  animation: none;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+  animation: test-top 2s;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: test-bottom 2s;
+}
+
+@keyframes test-top {
+  50% {
+    left: 58%;
+  }
+
+  100% {
+    left: 10%;
+  }
+}
+
+@keyframes test-bottom {
+  50% {
+    right: 58%;
+  }
+
+  100% {
+    right: 10%;
+  }
+}
+
+/* esercizio 13 */
+
+.ex-13-top-white {
+  animation: none;
+}
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: test-top2 3s;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: test-bottom2 3s;
+}
+
+@keyframes test-top2 {
+  25% {
+    left: 78%;
+  }
+
+  50% {
+    top: 48px;
+  }
+
+  75% {
+    left: -4%;
+  }
+
+  90% {
+    top: -10px;
+  }
+
+  100% {
+    left: 10%;
+  }
+}
+
+@keyframes test-bottom2 {
+  25% {
+    right: 78%;
+  }
+
+  50% {
+    bottom: 48px;
+  }
+
+  75% {
+    right: -4%;
+  }
+
+  90% {
+    bottom: -10px;
+  }
+
+  100% {
+    right: 10%;
+  }
+}
